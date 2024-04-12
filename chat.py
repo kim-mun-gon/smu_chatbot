@@ -9,7 +9,7 @@ def extract_text_from_pdf(pdf_path):
     return text
 
 def get_answer_from_chatgpt(question, context):
-    openai.api_key = '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'
+    openai.api_key = 'your_api_key'
 
     # 수정된 부분: ChatCompletion.create()를 사용하고, 입력 포맷을 조정합니다.
     response = openai.ChatCompletion.create(
