@@ -10,8 +10,7 @@ def extract_text_from_pdf(pdf_path):
 
 def get_answer_from_chatgpt(question, context):
     openai.api_key = 'your_api_key'
-
-    # 수정된 부분: ChatCompletion.create()를 사용하고, 입력 포맷을 조정합니다.
+    
     response = openai.ChatCompletion.create(
       model="gpt-3.5-turbo", 
       messages=[
@@ -22,7 +21,7 @@ def get_answer_from_chatgpt(question, context):
       stop=["\n"],
       temperature=0.5
     )
-    # 수정된 부분: choices 대신 choices의 첫 번째 항목의 'text' 필드를 직접 참조합니다.
+   
     return response.choices[0].message['content'].strip()
 
 if __name__ == "__main__":
