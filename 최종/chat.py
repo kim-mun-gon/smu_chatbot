@@ -25,7 +25,7 @@ def ask():
     return jsonify({'answer': answer})
 
 def get_answer_from_chatgpt(question, context):
-    openai.api_key = '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'
+    openai.api_key = 'your_api'
 
     response = openai.ChatCompletion.create(
         model="gpt-4-turbo", 
