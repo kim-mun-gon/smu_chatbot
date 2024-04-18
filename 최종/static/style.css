@@ -1,0 +1,74 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e9ecef;
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#chat-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-image: url('https://cdn.univ20.com/wp-content/uploads/2021/12/e2810a32f283e14edf5ea5586cce75b4.jpg');
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-color: transparent; 
+}
+
+#user-input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  height: 40px;
+  box-sizing: border-box;
+  width: calc(100% - 30px);
+  outline: none;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 10px auto; 
+  display: block;
+}
+
+#user-input:focus {
+  border-color: #007bff;
+}
+
+.message {
+  margin: 20px 10px; 
+  padding: 10px;
+  border-radius: 10px;
+  width: auto; 
+  max-width: 80%; 
+  word-wrap: break-word;
+  display: flex; 
+  align-items: center; 
+}
+
+.user-message {
+  background-color: rgba(0, 123, 255, 0.8); 
+  color: white;
+  text-align: left;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.bot-message {
+  background-color: rgba(229, 229, 234, 0.8); 
+  text-align: left;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+
